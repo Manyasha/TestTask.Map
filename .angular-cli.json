@@ -8,6 +8,7 @@
       "root": "web",
       "outDir": "public",
       "assets": [
+        "assets",
         "favicon.ico"
       ],
       "index": "index.html",

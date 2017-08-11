@@ -16,9 +16,7 @@ app.use('/ping', (req, res, err) => {
     res.send('pong');
 });
 
-app.get('/ui/', (req, res) => {
-    res.sendFile(path.join(__dirname, PUBLIC_PATH, 'index.html'));
-});
+app.use(express.static(path.join(__dirname, PUBLIC_PATH)));
 
 app.listen(config.PORT, config.HOST, () => {
     console.log(`Express app is listening on http://${config.HOST}:${config.PORT}/`);

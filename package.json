@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "build-aot": "node_modules/.bin/ngc -p web/tsconfig.json",
-    "build-web": "ng build --prod --base-href=/ui/ --output-path ./public/ --no-delete-output-path",
+    "build-web": "ng build --prod --output-path ./public/ --no-delete-output-path",
     "lint-web": "ng lint",
     "build": "npm run lint-web && npm run build-aot && npm run build-web",
     "start-dev": "nodemon server.js",
@@ -34,7 +34,9 @@
     "@types/node": "~6.0.60",
     "body-parser": "^1.17.2",
     "codelyzer": "~3.0.1",
+    "express": "^4.15.4",
     "nodemon": "^1.11.0",
+    "path": "^0.12.7",
     "ts-node": "~3.0.4",
     "tslint": "~5.3.2",
     "typescript": "~2.3.3"
